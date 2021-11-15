@@ -1,7 +1,7 @@
 # The goal
 
 The goal of this repository is to demonstrate simple architectural approach for flutter apps 
-and illustrate it's testability.
+and illustrate its testability.
 
 # The task being implemented
 
