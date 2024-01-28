@@ -16,7 +16,7 @@ import 'widget_test.mocks.dart';
 
 @GenerateMocks([ApiManager])
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('Find widgets with Search text', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MultiProvider(
       providers: [
