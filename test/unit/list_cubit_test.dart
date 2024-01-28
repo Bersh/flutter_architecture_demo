@@ -34,8 +34,10 @@ void main() {
         build: () => ListCubit(mockApiManager),
         act: (cubit) async {
           String testInput = 'a';
-          Future<Either<ApiError, MoviesListResponse>> future = Future.value(const Right<ApiError, MoviesListResponse>(
-              MoviesListResponse(page: 1, totalPages: 10, totalResults: 100500, items: [])));
+          Either<ApiError, MoviesListResponse> either = const Right<ApiError, MoviesListResponse>(
+              MoviesListResponse(page: 1, totalPages: 10, totalResults: 100500, items: []));
+          Future<Either<ApiError, MoviesListResponse>> future = Future.value(either);
+          provideDummy<Either<ApiError, MoviesListResponse>>(either);
           when(mockApiManager.loadMovieList(testInput, 1)).thenAnswer((_) => future);
           await cubit.refresh(testInput);
         },
@@ -51,8 +53,10 @@ void main() {
       build: () => ListCubit(mockApiManager),
       act: (cubit) async {
         String testInput = 'a';
-        Future<Either<ApiError, MoviesListResponse>> future = Future.value(const Right<ApiError, MoviesListResponse>(
-            MoviesListResponse(page: 1, totalPages: 10, totalResults: 100500, items: [])));
+        Either<ApiError, MoviesListResponse> either = const Right<ApiError, MoviesListResponse>(
+            MoviesListResponse(page: 1, totalPages: 10, totalResults: 100500, items: []));
+        Future<Either<ApiError, MoviesListResponse>> future = Future.value(either);
+        provideDummy<Either<ApiError, MoviesListResponse>>(either);
         when(mockApiManager.loadMovieList(testInput, 1)).thenAnswer((_) => future);
         await cubit.refresh(testInput);
         future = Future.value(const Right<ApiError, MoviesListResponse>(

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'api_error.dart';
 
@@ -11,22 +12,7 @@ part of 'api_error.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$ApiErrorTearOff {
-  const _$ApiErrorTearOff();
-
-  _ApiError call({required int code, String? message}) {
-    return _ApiError(
-      code: code,
-      message: message,
-    );
-  }
-}
-
-/// @nodoc
-const $ApiError = _$ApiErrorTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$ApiError {
@@ -41,64 +27,71 @@ mixin _$ApiError {
 /// @nodoc
 abstract class $ApiErrorCopyWith<$Res> {
   factory $ApiErrorCopyWith(ApiError value, $Res Function(ApiError) then) =
-      _$ApiErrorCopyWithImpl<$Res>;
+      _$ApiErrorCopyWithImpl<$Res, ApiError>;
+  @useResult
   $Res call({int code, String? message});
 }
 
 /// @nodoc
-class _$ApiErrorCopyWithImpl<$Res> implements $ApiErrorCopyWith<$Res> {
+class _$ApiErrorCopyWithImpl<$Res, $Val extends ApiError>
+    implements $ApiErrorCopyWith<$Res> {
   _$ApiErrorCopyWithImpl(this._value, this._then);
 
-  final ApiError _value;
   // ignore: unused_field
-  final $Res Function(ApiError) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? code = freezed,
+    Object? code = null,
     Object? message = freezed,
   }) {
     return _then(_value.copyWith(
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as int,
-      message: message == freezed
+      message: freezed == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$ApiErrorCopyWith<$Res> implements $ApiErrorCopyWith<$Res> {
-  factory _$ApiErrorCopyWith(_ApiError value, $Res Function(_ApiError) then) =
-      __$ApiErrorCopyWithImpl<$Res>;
+abstract class _$$ApiErrorImplCopyWith<$Res>
+    implements $ApiErrorCopyWith<$Res> {
+  factory _$$ApiErrorImplCopyWith(
+          _$ApiErrorImpl value, $Res Function(_$ApiErrorImpl) then) =
+      __$$ApiErrorImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int code, String? message});
 }
 
 /// @nodoc
-class __$ApiErrorCopyWithImpl<$Res> extends _$ApiErrorCopyWithImpl<$Res>
-    implements _$ApiErrorCopyWith<$Res> {
-  __$ApiErrorCopyWithImpl(_ApiError _value, $Res Function(_ApiError) _then)
-      : super(_value, (v) => _then(v as _ApiError));
+class __$$ApiErrorImplCopyWithImpl<$Res>
+    extends _$ApiErrorCopyWithImpl<$Res, _$ApiErrorImpl>
+    implements _$$ApiErrorImplCopyWith<$Res> {
+  __$$ApiErrorImplCopyWithImpl(
+      _$ApiErrorImpl _value, $Res Function(_$ApiErrorImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ApiError get _value => super._value as _ApiError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? code = freezed,
+    Object? code = null,
     Object? message = freezed,
   }) {
-    return _then(_ApiError(
-      code: code == freezed
+    return _then(_$ApiErrorImpl(
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as int,
-      message: message == freezed
+      message: freezed == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -108,8 +101,8 @@ class __$ApiErrorCopyWithImpl<$Res> extends _$ApiErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ApiError extends _ApiError {
-  const _$_ApiError({required this.code, this.message}) : super._();
+class _$ApiErrorImpl extends _ApiError {
+  const _$ApiErrorImpl({required this.code, this.message}) : super._();
 
   @override
   final int code;
@@ -122,10 +115,10 @@ class _$_ApiError extends _ApiError {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ApiError &&
+            other is _$ApiErrorImpl &&
             (identical(other.code, code) || other.code == code) &&
             (identical(other.message, message) || other.message == message));
   }
@@ -135,12 +128,14 @@ class _$_ApiError extends _ApiError {
 
   @JsonKey(ignore: true)
   @override
-  _$ApiErrorCopyWith<_ApiError> get copyWith =>
-      __$ApiErrorCopyWithImpl<_ApiError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ApiErrorImplCopyWith<_$ApiErrorImpl> get copyWith =>
+      __$$ApiErrorImplCopyWithImpl<_$ApiErrorImpl>(this, _$identity);
 }
 
 abstract class _ApiError extends ApiError {
-  const factory _ApiError({required int code, String? message}) = _$_ApiError;
+  const factory _ApiError({required final int code, final String? message}) =
+      _$ApiErrorImpl;
   const _ApiError._() : super._();
 
   @override
@@ -149,6 +144,6 @@ abstract class _ApiError extends ApiError {
   String? get message;
   @override
   @JsonKey(ignore: true)
-  _$ApiErrorCopyWith<_ApiError> get copyWith =>
+  _$$ApiErrorImplCopyWith<_$ApiErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'details_cubit.dart';
 
@@ -11,35 +12,7 @@ part of 'details_cubit.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$DetailsStateTearOff {
-  const _$DetailsStateTearOff();
-
-  Initial initial() {
-    return const Initial();
-  }
-
-  Loading loading() {
-    return const Loading();
-  }
-
-  LoadedData loadedData(MovieDetails details) {
-    return LoadedData(
-      details,
-    );
-  }
-
-  Error error(String errorMessage) {
-    return Error(
-      errorMessage,
-    );
-  }
-}
-
-/// @nodoc
-const $DetailsState = _$DetailsStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$DetailsState {
@@ -53,10 +26,10 @@ mixin _$DetailsState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(MovieDetails details)? loadedData,
-    TResult Function(String errorMessage)? error,
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(MovieDetails details)? loadedData,
+    TResult? Function(String errorMessage)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -78,10 +51,10 @@ mixin _$DetailsState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Loading value)? loading,
-    TResult Function(LoadedData value)? loadedData,
-    TResult Function(Error value)? error,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(LoadedData value)? loadedData,
+    TResult? Function(Error value)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -99,38 +72,40 @@ mixin _$DetailsState {
 abstract class $DetailsStateCopyWith<$Res> {
   factory $DetailsStateCopyWith(
           DetailsState value, $Res Function(DetailsState) then) =
-      _$DetailsStateCopyWithImpl<$Res>;
+      _$DetailsStateCopyWithImpl<$Res, DetailsState>;
 }
 
 /// @nodoc
-class _$DetailsStateCopyWithImpl<$Res> implements $DetailsStateCopyWith<$Res> {
+class _$DetailsStateCopyWithImpl<$Res, $Val extends DetailsState>
+    implements $DetailsStateCopyWith<$Res> {
   _$DetailsStateCopyWithImpl(this._value, this._then);
 
-  final DetailsState _value;
   // ignore: unused_field
-  final $Res Function(DetailsState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res> extends _$DetailsStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
-
-  @override
-  Initial get _value => super._value as Initial;
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$DetailsStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Initial implements Initial {
-  const _$Initial();
+class _$InitialImpl implements Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -138,9 +113,9 @@ class _$Initial implements Initial {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is Initial);
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -160,10 +135,10 @@ class _$Initial implements Initial {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(MovieDetails details)? loadedData,
-    TResult Function(String errorMessage)? error,
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(MovieDetails details)? loadedData,
+    TResult? Function(String errorMessage)? error,
   }) {
     return initial?.call();
   }
@@ -197,10 +172,10 @@ class _$Initial implements Initial {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Loading value)? loading,
-    TResult Function(LoadedData value)? loadedData,
-    TResult Function(Error value)? error,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(LoadedData value)? loadedData,
+    TResult? Function(Error value)? error,
   }) {
     return initial?.call(this);
   }
@@ -222,29 +197,29 @@ class _$Initial implements Initial {
 }
 
 abstract class Initial implements DetailsState {
-  const factory Initial() = _$Initial;
+  const factory Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingImplCopyWith<$Res> {
+  factory _$$LoadingImplCopyWith(
+          _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
+      __$$LoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res> extends _$DetailsStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
-
-  @override
-  Loading get _value => super._value as Loading;
+class __$$LoadingImplCopyWithImpl<$Res>
+    extends _$DetailsStateCopyWithImpl<$Res, _$LoadingImpl>
+    implements _$$LoadingImplCopyWith<$Res> {
+  __$$LoadingImplCopyWithImpl(
+      _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Loading implements Loading {
-  const _$Loading();
+class _$LoadingImpl implements Loading {
+  const _$LoadingImpl();
 
   @override
   String toString() {
@@ -252,9 +227,9 @@ class _$Loading implements Loading {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is Loading);
+        (other.runtimeType == runtimeType && other is _$LoadingImpl);
   }
 
   @override
@@ -274,10 +249,10 @@ class _$Loading implements Loading {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(MovieDetails details)? loadedData,
-    TResult Function(String errorMessage)? error,
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(MovieDetails details)? loadedData,
+    TResult? Function(String errorMessage)? error,
   }) {
     return loading?.call();
   }
@@ -311,10 +286,10 @@ class _$Loading implements Loading {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Loading value)? loading,
-    TResult Function(LoadedData value)? loadedData,
-    TResult Function(Error value)? error,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(LoadedData value)? loadedData,
+    TResult? Function(Error value)? error,
   }) {
     return loading?.call(this);
   }
@@ -336,34 +311,35 @@ class _$Loading implements Loading {
 }
 
 abstract class Loading implements DetailsState {
-  const factory Loading() = _$Loading;
+  const factory Loading() = _$LoadingImpl;
 }
 
 /// @nodoc
-abstract class $LoadedDataCopyWith<$Res> {
-  factory $LoadedDataCopyWith(
-          LoadedData value, $Res Function(LoadedData) then) =
-      _$LoadedDataCopyWithImpl<$Res>;
+abstract class _$$LoadedDataImplCopyWith<$Res> {
+  factory _$$LoadedDataImplCopyWith(
+          _$LoadedDataImpl value, $Res Function(_$LoadedDataImpl) then) =
+      __$$LoadedDataImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({MovieDetails details});
 
   $MovieDetailsCopyWith<$Res> get details;
 }
 
 /// @nodoc
-class _$LoadedDataCopyWithImpl<$Res> extends _$DetailsStateCopyWithImpl<$Res>
-    implements $LoadedDataCopyWith<$Res> {
-  _$LoadedDataCopyWithImpl(LoadedData _value, $Res Function(LoadedData) _then)
-      : super(_value, (v) => _then(v as LoadedData));
+class __$$LoadedDataImplCopyWithImpl<$Res>
+    extends _$DetailsStateCopyWithImpl<$Res, _$LoadedDataImpl>
+    implements _$$LoadedDataImplCopyWith<$Res> {
+  __$$LoadedDataImplCopyWithImpl(
+      _$LoadedDataImpl _value, $Res Function(_$LoadedDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  LoadedData get _value => super._value as LoadedData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? details = freezed,
+    Object? details = null,
   }) {
-    return _then(LoadedData(
-      details == freezed
+    return _then(_$LoadedDataImpl(
+      null == details
           ? _value.details
           : details // ignore: cast_nullable_to_non_nullable
               as MovieDetails,
@@ -371,6 +347,7 @@ class _$LoadedDataCopyWithImpl<$Res> extends _$DetailsStateCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MovieDetailsCopyWith<$Res> get details {
     return $MovieDetailsCopyWith<$Res>(_value.details, (value) {
       return _then(_value.copyWith(details: value));
@@ -380,8 +357,8 @@ class _$LoadedDataCopyWithImpl<$Res> extends _$DetailsStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LoadedData implements LoadedData {
-  const _$LoadedData(this.details);
+class _$LoadedDataImpl implements LoadedData {
+  const _$LoadedDataImpl(this.details);
 
   @override
   final MovieDetails details;
@@ -392,10 +369,10 @@ class _$LoadedData implements LoadedData {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is LoadedData &&
+            other is _$LoadedDataImpl &&
             (identical(other.details, details) || other.details == details));
   }
 
@@ -404,8 +381,9 @@ class _$LoadedData implements LoadedData {
 
   @JsonKey(ignore: true)
   @override
-  $LoadedDataCopyWith<LoadedData> get copyWith =>
-      _$LoadedDataCopyWithImpl<LoadedData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LoadedDataImplCopyWith<_$LoadedDataImpl> get copyWith =>
+      __$$LoadedDataImplCopyWithImpl<_$LoadedDataImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -421,10 +399,10 @@ class _$LoadedData implements LoadedData {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(MovieDetails details)? loadedData,
-    TResult Function(String errorMessage)? error,
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(MovieDetails details)? loadedData,
+    TResult? Function(String errorMessage)? error,
   }) {
     return loadedData?.call(details);
   }
@@ -458,10 +436,10 @@ class _$LoadedData implements LoadedData {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Loading value)? loading,
-    TResult Function(LoadedData value)? loadedData,
-    TResult Function(Error value)? error,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(LoadedData value)? loadedData,
+    TResult? Function(Error value)? error,
   }) {
     return loadedData?.call(this);
   }
@@ -483,36 +461,38 @@ class _$LoadedData implements LoadedData {
 }
 
 abstract class LoadedData implements DetailsState {
-  const factory LoadedData(MovieDetails details) = _$LoadedData;
+  const factory LoadedData(final MovieDetails details) = _$LoadedDataImpl;
 
   MovieDetails get details;
   @JsonKey(ignore: true)
-  $LoadedDataCopyWith<LoadedData> get copyWith =>
+  _$$LoadedDataImplCopyWith<_$LoadedDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ErrorCopyWith<$Res> {
-  factory $ErrorCopyWith(Error value, $Res Function(Error) then) =
-      _$ErrorCopyWithImpl<$Res>;
+abstract class _$$ErrorImplCopyWith<$Res> {
+  factory _$$ErrorImplCopyWith(
+          _$ErrorImpl value, $Res Function(_$ErrorImpl) then) =
+      __$$ErrorImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String errorMessage});
 }
 
 /// @nodoc
-class _$ErrorCopyWithImpl<$Res> extends _$DetailsStateCopyWithImpl<$Res>
-    implements $ErrorCopyWith<$Res> {
-  _$ErrorCopyWithImpl(Error _value, $Res Function(Error) _then)
-      : super(_value, (v) => _then(v as Error));
+class __$$ErrorImplCopyWithImpl<$Res>
+    extends _$DetailsStateCopyWithImpl<$Res, _$ErrorImpl>
+    implements _$$ErrorImplCopyWith<$Res> {
+  __$$ErrorImplCopyWithImpl(
+      _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
+      : super(_value, _then);
 
-  @override
-  Error get _value => super._value as Error;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? errorMessage = freezed,
+    Object? errorMessage = null,
   }) {
-    return _then(Error(
-      errorMessage == freezed
+    return _then(_$ErrorImpl(
+      null == errorMessage
           ? _value.errorMessage
           : errorMessage // ignore: cast_nullable_to_non_nullable
               as String,
@@ -522,8 +502,8 @@ class _$ErrorCopyWithImpl<$Res> extends _$DetailsStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Error implements Error {
-  const _$Error(this.errorMessage);
+class _$ErrorImpl implements Error {
+  const _$ErrorImpl(this.errorMessage);
 
   @override
   final String errorMessage;
@@ -534,10 +514,10 @@ class _$Error implements Error {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is Error &&
+            other is _$ErrorImpl &&
             (identical(other.errorMessage, errorMessage) ||
                 other.errorMessage == errorMessage));
   }
@@ -547,8 +527,9 @@ class _$Error implements Error {
 
   @JsonKey(ignore: true)
   @override
-  $ErrorCopyWith<Error> get copyWith =>
-      _$ErrorCopyWithImpl<Error>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
+      __$$ErrorImplCopyWithImpl<_$ErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -564,10 +545,10 @@ class _$Error implements Error {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(MovieDetails details)? loadedData,
-    TResult Function(String errorMessage)? error,
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(MovieDetails details)? loadedData,
+    TResult? Function(String errorMessage)? error,
   }) {
     return error?.call(errorMessage);
   }
@@ -601,10 +582,10 @@ class _$Error implements Error {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Loading value)? loading,
-    TResult Function(LoadedData value)? loadedData,
-    TResult Function(Error value)? error,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(LoadedData value)? loadedData,
+    TResult? Function(Error value)? error,
   }) {
     return error?.call(this);
   }
@@ -626,9 +607,10 @@ class _$Error implements Error {
 }
 
 abstract class Error implements DetailsState {
-  const factory Error(String errorMessage) = _$Error;
+  const factory Error(final String errorMessage) = _$ErrorImpl;
 
   String get errorMessage;
   @JsonKey(ignore: true)
-  $ErrorCopyWith<Error> get copyWith => throw _privateConstructorUsedError;
+  _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

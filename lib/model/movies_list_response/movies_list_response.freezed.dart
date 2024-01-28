@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'movies_list_response.dart';
 
@@ -11,40 +12,11 @@ part of 'movies_list_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 MoviesListResponse _$MoviesListResponseFromJson(Map<String, dynamic> json) {
   return _MovieListResponse.fromJson(json);
 }
-
-/// @nodoc
-class _$MoviesListResponseTearOff {
-  const _$MoviesListResponseTearOff();
-
-  _MovieListResponse call(
-      {@JsonKey(name: 'page', defaultValue: 1)
-          required int page,
-      @JsonKey(name: 'total_pages', defaultValue: 0)
-          required int totalPages,
-      @JsonKey(name: 'total_results', defaultValue: 0)
-          required int totalResults,
-      @JsonKey(name: 'results', defaultValue: [])
-          required List<MovieListItem> items}) {
-    return _MovieListResponse(
-      page: page,
-      totalPages: totalPages,
-      totalResults: totalResults,
-      items: items,
-    );
-  }
-
-  MoviesListResponse fromJson(Map<String, Object?> json) {
-    return MoviesListResponse.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MoviesListResponse = _$MoviesListResponseTearOff();
 
 /// @nodoc
 mixin _$MoviesListResponse {
@@ -67,7 +39,8 @@ mixin _$MoviesListResponse {
 abstract class $MoviesListResponseCopyWith<$Res> {
   factory $MoviesListResponseCopyWith(
           MoviesListResponse value, $Res Function(MoviesListResponse) then) =
-      _$MoviesListResponseCopyWithImpl<$Res>;
+      _$MoviesListResponseCopyWithImpl<$Res, MoviesListResponse>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'page', defaultValue: 1) int page,
       @JsonKey(name: 'total_pages', defaultValue: 0) int totalPages,
@@ -76,49 +49,52 @@ abstract class $MoviesListResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MoviesListResponseCopyWithImpl<$Res>
+class _$MoviesListResponseCopyWithImpl<$Res, $Val extends MoviesListResponse>
     implements $MoviesListResponseCopyWith<$Res> {
   _$MoviesListResponseCopyWithImpl(this._value, this._then);
 
-  final MoviesListResponse _value;
   // ignore: unused_field
-  final $Res Function(MoviesListResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? page = freezed,
-    Object? totalPages = freezed,
-    Object? totalResults = freezed,
-    Object? items = freezed,
+    Object? page = null,
+    Object? totalPages = null,
+    Object? totalResults = null,
+    Object? items = null,
   }) {
     return _then(_value.copyWith(
-      page: page == freezed
+      page: null == page
           ? _value.page
           : page // ignore: cast_nullable_to_non_nullable
               as int,
-      totalPages: totalPages == freezed
+      totalPages: null == totalPages
           ? _value.totalPages
           : totalPages // ignore: cast_nullable_to_non_nullable
               as int,
-      totalResults: totalResults == freezed
+      totalResults: null == totalResults
           ? _value.totalResults
           : totalResults // ignore: cast_nullable_to_non_nullable
               as int,
-      items: items == freezed
+      items: null == items
           ? _value.items
           : items // ignore: cast_nullable_to_non_nullable
               as List<MovieListItem>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$MovieListResponseCopyWith<$Res>
+abstract class _$$MovieListResponseImplCopyWith<$Res>
     implements $MoviesListResponseCopyWith<$Res> {
-  factory _$MovieListResponseCopyWith(
-          _MovieListResponse value, $Res Function(_MovieListResponse) then) =
-      __$MovieListResponseCopyWithImpl<$Res>;
+  factory _$$MovieListResponseImplCopyWith(_$MovieListResponseImpl value,
+          $Res Function(_$MovieListResponseImpl) then) =
+      __$$MovieListResponseImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'page', defaultValue: 1) int page,
       @JsonKey(name: 'total_pages', defaultValue: 0) int totalPages,
@@ -127,38 +103,36 @@ abstract class _$MovieListResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MovieListResponseCopyWithImpl<$Res>
-    extends _$MoviesListResponseCopyWithImpl<$Res>
-    implements _$MovieListResponseCopyWith<$Res> {
-  __$MovieListResponseCopyWithImpl(
-      _MovieListResponse _value, $Res Function(_MovieListResponse) _then)
-      : super(_value, (v) => _then(v as _MovieListResponse));
+class __$$MovieListResponseImplCopyWithImpl<$Res>
+    extends _$MoviesListResponseCopyWithImpl<$Res, _$MovieListResponseImpl>
+    implements _$$MovieListResponseImplCopyWith<$Res> {
+  __$$MovieListResponseImplCopyWithImpl(_$MovieListResponseImpl _value,
+      $Res Function(_$MovieListResponseImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _MovieListResponse get _value => super._value as _MovieListResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? page = freezed,
-    Object? totalPages = freezed,
-    Object? totalResults = freezed,
-    Object? items = freezed,
+    Object? page = null,
+    Object? totalPages = null,
+    Object? totalResults = null,
+    Object? items = null,
   }) {
-    return _then(_MovieListResponse(
-      page: page == freezed
+    return _then(_$MovieListResponseImpl(
+      page: null == page
           ? _value.page
           : page // ignore: cast_nullable_to_non_nullable
               as int,
-      totalPages: totalPages == freezed
+      totalPages: null == totalPages
           ? _value.totalPages
           : totalPages // ignore: cast_nullable_to_non_nullable
               as int,
-      totalResults: totalResults == freezed
+      totalResults: null == totalResults
           ? _value.totalResults
           : totalResults // ignore: cast_nullable_to_non_nullable
               as int,
-      items: items == freezed
-          ? _value.items
+      items: null == items
+          ? _value._items
           : items // ignore: cast_nullable_to_non_nullable
               as List<MovieListItem>,
     ));
@@ -167,20 +141,19 @@ class __$MovieListResponseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MovieListResponse extends _MovieListResponse {
-  const _$_MovieListResponse(
-      {@JsonKey(name: 'page', defaultValue: 1)
-          required this.page,
-      @JsonKey(name: 'total_pages', defaultValue: 0)
-          required this.totalPages,
+class _$MovieListResponseImpl extends _MovieListResponse {
+  const _$MovieListResponseImpl(
+      {@JsonKey(name: 'page', defaultValue: 1) required this.page,
+      @JsonKey(name: 'total_pages', defaultValue: 0) required this.totalPages,
       @JsonKey(name: 'total_results', defaultValue: 0)
-          required this.totalResults,
+      required this.totalResults,
       @JsonKey(name: 'results', defaultValue: [])
-          required this.items})
-      : super._();
+      required final List<MovieListItem> items})
+      : _items = items,
+        super._();
 
-  factory _$_MovieListResponse.fromJson(Map<String, dynamic> json) =>
-      _$$_MovieListResponseFromJson(json);
+  factory _$MovieListResponseImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MovieListResponseImplFromJson(json);
 
   @override
   @JsonKey(name: 'page', defaultValue: 1)
@@ -191,9 +164,14 @@ class _$_MovieListResponse extends _MovieListResponse {
   @override
   @JsonKey(name: 'total_results', defaultValue: 0)
   final int totalResults;
+  final List<MovieListItem> _items;
   @override
   @JsonKey(name: 'results', defaultValue: [])
-  final List<MovieListItem> items;
+  List<MovieListItem> get items {
+    if (_items is EqualUnmodifiableListView) return _items;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_items);
+  }
 
   @override
   String toString() {
@@ -201,47 +179,51 @@ class _$_MovieListResponse extends _MovieListResponse {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MovieListResponse &&
+            other is _$MovieListResponseImpl &&
             (identical(other.page, page) || other.page == page) &&
             (identical(other.totalPages, totalPages) ||
                 other.totalPages == totalPages) &&
             (identical(other.totalResults, totalResults) ||
                 other.totalResults == totalResults) &&
-            const DeepCollectionEquality().equals(other.items, items));
+            const DeepCollectionEquality().equals(other._items, _items));
   }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, page, totalPages, totalResults,
-      const DeepCollectionEquality().hash(items));
 
   @JsonKey(ignore: true)
   @override
-  _$MovieListResponseCopyWith<_MovieListResponse> get copyWith =>
-      __$MovieListResponseCopyWithImpl<_MovieListResponse>(this, _$identity);
+  int get hashCode => Object.hash(runtimeType, page, totalPages, totalResults,
+      const DeepCollectionEquality().hash(_items));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$MovieListResponseImplCopyWith<_$MovieListResponseImpl> get copyWith =>
+      __$$MovieListResponseImplCopyWithImpl<_$MovieListResponseImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MovieListResponseToJson(this);
+    return _$$MovieListResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MovieListResponse extends MoviesListResponse {
   const factory _MovieListResponse(
-      {@JsonKey(name: 'page', defaultValue: 1)
-          required int page,
+      {@JsonKey(name: 'page', defaultValue: 1) required final int page,
       @JsonKey(name: 'total_pages', defaultValue: 0)
-          required int totalPages,
+      required final int totalPages,
       @JsonKey(name: 'total_results', defaultValue: 0)
-          required int totalResults,
+      required final int totalResults,
       @JsonKey(name: 'results', defaultValue: [])
-          required List<MovieListItem> items}) = _$_MovieListResponse;
+      required final List<MovieListItem> items}) = _$MovieListResponseImpl;
   const _MovieListResponse._() : super._();
 
   factory _MovieListResponse.fromJson(Map<String, dynamic> json) =
-      _$_MovieListResponse.fromJson;
+      _$MovieListResponseImpl.fromJson;
 
   @override
   @JsonKey(name: 'page', defaultValue: 1)
@@ -257,6 +239,6 @@ abstract class _MovieListResponse extends MoviesListResponse {
   List<MovieListItem> get items;
   @override
   @JsonKey(ignore: true)
-  _$MovieListResponseCopyWith<_MovieListResponse> get copyWith =>
+  _$$MovieListResponseImplCopyWith<_$MovieListResponseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

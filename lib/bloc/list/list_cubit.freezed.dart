@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'list_cubit.dart';
 
@@ -11,54 +12,11 @@ part of 'list_cubit.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$ListStateTearOff {
-  const _$ListStateTearOff();
-
-  Initial initial({List<MovieListItem> items = const []}) {
-    return Initial(
-      items: items,
-    );
-  }
-
-  Loading loading({List<MovieListItem> items = const []}) {
-    return Loading(
-      items: items,
-    );
-  }
-
-  LoadedData loadedData(
-      {required List<MovieListItem> items, required int pageNumber}) {
-    return LoadedData(
-      items: items,
-      pageNumber: pageNumber,
-    );
-  }
-
-  Error error(
-      {required List<MovieListItem> items, required String errorMessage}) {
-    return Error(
-      items: items,
-      errorMessage: errorMessage,
-    );
-  }
-
-  AllDataLoaded allDataLoaded({required List<MovieListItem> items}) {
-    return AllDataLoaded(
-      items: items,
-    );
-  }
-}
-
-/// @nodoc
-const $ListState = _$ListStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$ListState {
   List<MovieListItem> get items => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(List<MovieListItem> items) initial,
@@ -72,11 +30,11 @@ mixin _$ListState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(List<MovieListItem> items)? initial,
-    TResult Function(List<MovieListItem> items)? loading,
-    TResult Function(List<MovieListItem> items, int pageNumber)? loadedData,
-    TResult Function(List<MovieListItem> items, String errorMessage)? error,
-    TResult Function(List<MovieListItem> items)? allDataLoaded,
+    TResult? Function(List<MovieListItem> items)? initial,
+    TResult? Function(List<MovieListItem> items)? loading,
+    TResult? Function(List<MovieListItem> items, int pageNumber)? loadedData,
+    TResult? Function(List<MovieListItem> items, String errorMessage)? error,
+    TResult? Function(List<MovieListItem> items)? allDataLoaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -100,11 +58,11 @@ mixin _$ListState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Loading value)? loading,
-    TResult Function(LoadedData value)? loadedData,
-    TResult Function(Error value)? error,
-    TResult Function(AllDataLoaded value)? allDataLoaded,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(LoadedData value)? loadedData,
+    TResult? Function(Error value)? error,
+    TResult? Function(AllDataLoaded value)? allDataLoaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -126,55 +84,62 @@ mixin _$ListState {
 /// @nodoc
 abstract class $ListStateCopyWith<$Res> {
   factory $ListStateCopyWith(ListState value, $Res Function(ListState) then) =
-      _$ListStateCopyWithImpl<$Res>;
+      _$ListStateCopyWithImpl<$Res, ListState>;
+  @useResult
   $Res call({List<MovieListItem> items});
 }
 
 /// @nodoc
-class _$ListStateCopyWithImpl<$Res> implements $ListStateCopyWith<$Res> {
+class _$ListStateCopyWithImpl<$Res, $Val extends ListState>
+    implements $ListStateCopyWith<$Res> {
   _$ListStateCopyWithImpl(this._value, this._then);
 
-  final ListState _value;
   // ignore: unused_field
-  final $Res Function(ListState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? items = freezed,
+    Object? items = null,
   }) {
     return _then(_value.copyWith(
-      items: items == freezed
+      items: null == items
           ? _value.items
           : items // ignore: cast_nullable_to_non_nullable
               as List<MovieListItem>,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class $InitialCopyWith<$Res> implements $ListStateCopyWith<$Res> {
-  factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
-      _$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res>
+    implements $ListStateCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({List<MovieListItem> items});
 }
 
 /// @nodoc
-class _$InitialCopyWithImpl<$Res> extends _$ListStateCopyWithImpl<$Res>
-    implements $InitialCopyWith<$Res> {
-  _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
-      : super(_value, (v) => _then(v as Initial));
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$ListStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
+      : super(_value, _then);
 
-  @override
-  Initial get _value => super._value as Initial;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? items = freezed,
+    Object? items = null,
   }) {
-    return _then(Initial(
-      items: items == freezed
-          ? _value.items
+    return _then(_$InitialImpl(
+      items: null == items
+          ? _value._items
           : items // ignore: cast_nullable_to_non_nullable
               as List<MovieListItem>,
     ));
@@ -183,12 +148,18 @@ class _$InitialCopyWithImpl<$Res> extends _$ListStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Initial with DiagnosticableTreeMixin implements Initial {
-  const _$Initial({this.items = const []});
+class _$InitialImpl with DiagnosticableTreeMixin implements Initial {
+  const _$InitialImpl({final List<MovieListItem> items = const []})
+      : _items = items;
 
-  @JsonKey(defaultValue: const [])
+  final List<MovieListItem> _items;
   @override
-  final List<MovieListItem> items;
+  @JsonKey()
+  List<MovieListItem> get items {
+    if (_items is EqualUnmodifiableListView) return _items;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_items);
+  }
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -204,21 +175,22 @@ class _$Initial with DiagnosticableTreeMixin implements Initial {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is Initial &&
-            const DeepCollectionEquality().equals(other.items, items));
+            other is _$InitialImpl &&
+            const DeepCollectionEquality().equals(other._items, _items));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(items));
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_items));
 
   @JsonKey(ignore: true)
   @override
-  $InitialCopyWith<Initial> get copyWith =>
-      _$InitialCopyWithImpl<Initial>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>
+      __$$InitialImplCopyWithImpl<_$InitialImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -237,11 +209,11 @@ class _$Initial with DiagnosticableTreeMixin implements Initial {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(List<MovieListItem> items)? initial,
-    TResult Function(List<MovieListItem> items)? loading,
-    TResult Function(List<MovieListItem> items, int pageNumber)? loadedData,
-    TResult Function(List<MovieListItem> items, String errorMessage)? error,
-    TResult Function(List<MovieListItem> items)? allDataLoaded,
+    TResult? Function(List<MovieListItem> items)? initial,
+    TResult? Function(List<MovieListItem> items)? loading,
+    TResult? Function(List<MovieListItem> items, int pageNumber)? loadedData,
+    TResult? Function(List<MovieListItem> items, String errorMessage)? error,
+    TResult? Function(List<MovieListItem> items)? allDataLoaded,
   }) {
     return initial?.call(items);
   }
@@ -277,11 +249,11 @@ class _$Initial with DiagnosticableTreeMixin implements Initial {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Loading value)? loading,
-    TResult Function(LoadedData value)? loadedData,
-    TResult Function(Error value)? error,
-    TResult Function(AllDataLoaded value)? allDataLoaded,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(LoadedData value)? loadedData,
+    TResult? Function(Error value)? error,
+    TResult? Function(AllDataLoaded value)? allDataLoaded,
   }) {
     return initial?.call(this);
   }
@@ -304,39 +276,43 @@ class _$Initial with DiagnosticableTreeMixin implements Initial {
 }
 
 abstract class Initial implements ListState {
-  const factory Initial({List<MovieListItem> items}) = _$Initial;
+  const factory Initial({final List<MovieListItem> items}) = _$InitialImpl;
 
   @override
   List<MovieListItem> get items;
   @override
   @JsonKey(ignore: true)
-  $InitialCopyWith<Initial> get copyWith => throw _privateConstructorUsedError;
+  _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LoadingCopyWith<$Res> implements $ListStateCopyWith<$Res> {
-  factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
-      _$LoadingCopyWithImpl<$Res>;
+abstract class _$$LoadingImplCopyWith<$Res>
+    implements $ListStateCopyWith<$Res> {
+  factory _$$LoadingImplCopyWith(
+          _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
+      __$$LoadingImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({List<MovieListItem> items});
 }
 
 /// @nodoc
-class _$LoadingCopyWithImpl<$Res> extends _$ListStateCopyWithImpl<$Res>
-    implements $LoadingCopyWith<$Res> {
-  _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
-      : super(_value, (v) => _then(v as Loading));
+class __$$LoadingImplCopyWithImpl<$Res>
+    extends _$ListStateCopyWithImpl<$Res, _$LoadingImpl>
+    implements _$$LoadingImplCopyWith<$Res> {
+  __$$LoadingImplCopyWithImpl(
+      _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
+      : super(_value, _then);
 
-  @override
-  Loading get _value => super._value as Loading;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? items = freezed,
+    Object? items = null,
   }) {
-    return _then(Loading(
-      items: items == freezed
-          ? _value.items
+    return _then(_$LoadingImpl(
+      items: null == items
+          ? _value._items
           : items // ignore: cast_nullable_to_non_nullable
               as List<MovieListItem>,
     ));
@@ -345,12 +321,18 @@ class _$LoadingCopyWithImpl<$Res> extends _$ListStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Loading with DiagnosticableTreeMixin implements Loading {
-  const _$Loading({this.items = const []});
+class _$LoadingImpl with DiagnosticableTreeMixin implements Loading {
+  const _$LoadingImpl({final List<MovieListItem> items = const []})
+      : _items = items;
 
-  @JsonKey(defaultValue: const [])
+  final List<MovieListItem> _items;
   @override
-  final List<MovieListItem> items;
+  @JsonKey()
+  List<MovieListItem> get items {
+    if (_items is EqualUnmodifiableListView) return _items;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_items);
+  }
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -366,21 +348,22 @@ class _$Loading with DiagnosticableTreeMixin implements Loading {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is Loading &&
-            const DeepCollectionEquality().equals(other.items, items));
+            other is _$LoadingImpl &&
+            const DeepCollectionEquality().equals(other._items, _items));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(items));
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_items));
 
   @JsonKey(ignore: true)
   @override
-  $LoadingCopyWith<Loading> get copyWith =>
-      _$LoadingCopyWithImpl<Loading>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LoadingImplCopyWith<_$LoadingImpl> get copyWith =>
+      __$$LoadingImplCopyWithImpl<_$LoadingImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -399,11 +382,11 @@ class _$Loading with DiagnosticableTreeMixin implements Loading {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(List<MovieListItem> items)? initial,
-    TResult Function(List<MovieListItem> items)? loading,
-    TResult Function(List<MovieListItem> items, int pageNumber)? loadedData,
-    TResult Function(List<MovieListItem> items, String errorMessage)? error,
-    TResult Function(List<MovieListItem> items)? allDataLoaded,
+    TResult? Function(List<MovieListItem> items)? initial,
+    TResult? Function(List<MovieListItem> items)? loading,
+    TResult? Function(List<MovieListItem> items, int pageNumber)? loadedData,
+    TResult? Function(List<MovieListItem> items, String errorMessage)? error,
+    TResult? Function(List<MovieListItem> items)? allDataLoaded,
   }) {
     return loading?.call(items);
   }
@@ -439,11 +422,11 @@ class _$Loading with DiagnosticableTreeMixin implements Loading {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Loading value)? loading,
-    TResult Function(LoadedData value)? loadedData,
-    TResult Function(Error value)? error,
-    TResult Function(AllDataLoaded value)? allDataLoaded,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(LoadedData value)? loadedData,
+    TResult? Function(Error value)? error,
+    TResult? Function(AllDataLoaded value)? allDataLoaded,
   }) {
     return loading?.call(this);
   }
@@ -466,44 +449,47 @@ class _$Loading with DiagnosticableTreeMixin implements Loading {
 }
 
 abstract class Loading implements ListState {
-  const factory Loading({List<MovieListItem> items}) = _$Loading;
+  const factory Loading({final List<MovieListItem> items}) = _$LoadingImpl;
 
   @override
   List<MovieListItem> get items;
   @override
   @JsonKey(ignore: true)
-  $LoadingCopyWith<Loading> get copyWith => throw _privateConstructorUsedError;
+  _$$LoadingImplCopyWith<_$LoadingImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LoadedDataCopyWith<$Res> implements $ListStateCopyWith<$Res> {
-  factory $LoadedDataCopyWith(
-          LoadedData value, $Res Function(LoadedData) then) =
-      _$LoadedDataCopyWithImpl<$Res>;
+abstract class _$$LoadedDataImplCopyWith<$Res>
+    implements $ListStateCopyWith<$Res> {
+  factory _$$LoadedDataImplCopyWith(
+          _$LoadedDataImpl value, $Res Function(_$LoadedDataImpl) then) =
+      __$$LoadedDataImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({List<MovieListItem> items, int pageNumber});
 }
 
 /// @nodoc
-class _$LoadedDataCopyWithImpl<$Res> extends _$ListStateCopyWithImpl<$Res>
-    implements $LoadedDataCopyWith<$Res> {
-  _$LoadedDataCopyWithImpl(LoadedData _value, $Res Function(LoadedData) _then)
-      : super(_value, (v) => _then(v as LoadedData));
+class __$$LoadedDataImplCopyWithImpl<$Res>
+    extends _$ListStateCopyWithImpl<$Res, _$LoadedDataImpl>
+    implements _$$LoadedDataImplCopyWith<$Res> {
+  __$$LoadedDataImplCopyWithImpl(
+      _$LoadedDataImpl _value, $Res Function(_$LoadedDataImpl) _then)
+      : super(_value, _then);
 
-  @override
-  LoadedData get _value => super._value as LoadedData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? items = freezed,
-    Object? pageNumber = freezed,
+    Object? items = null,
+    Object? pageNumber = null,
   }) {
-    return _then(LoadedData(
-      items: items == freezed
-          ? _value.items
+    return _then(_$LoadedDataImpl(
+      items: null == items
+          ? _value._items
           : items // ignore: cast_nullable_to_non_nullable
               as List<MovieListItem>,
-      pageNumber: pageNumber == freezed
+      pageNumber: null == pageNumber
           ? _value.pageNumber
           : pageNumber // ignore: cast_nullable_to_non_nullable
               as int,
@@ -513,11 +499,19 @@ class _$LoadedDataCopyWithImpl<$Res> extends _$ListStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LoadedData with DiagnosticableTreeMixin implements LoadedData {
-  const _$LoadedData({required this.items, required this.pageNumber});
+class _$LoadedDataImpl with DiagnosticableTreeMixin implements LoadedData {
+  const _$LoadedDataImpl(
+      {required final List<MovieListItem> items, required this.pageNumber})
+      : _items = items;
 
+  final List<MovieListItem> _items;
   @override
-  final List<MovieListItem> items;
+  List<MovieListItem> get items {
+    if (_items is EqualUnmodifiableListView) return _items;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_items);
+  }
+
   @override
   final int pageNumber;
 
@@ -536,23 +530,24 @@ class _$LoadedData with DiagnosticableTreeMixin implements LoadedData {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is LoadedData &&
-            const DeepCollectionEquality().equals(other.items, items) &&
+            other is _$LoadedDataImpl &&
+            const DeepCollectionEquality().equals(other._items, _items) &&
             (identical(other.pageNumber, pageNumber) ||
                 other.pageNumber == pageNumber));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(items), pageNumber);
+      runtimeType, const DeepCollectionEquality().hash(_items), pageNumber);
 
   @JsonKey(ignore: true)
   @override
-  $LoadedDataCopyWith<LoadedData> get copyWith =>
-      _$LoadedDataCopyWithImpl<LoadedData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$LoadedDataImplCopyWith<_$LoadedDataImpl> get copyWith =>
+      __$$LoadedDataImplCopyWithImpl<_$LoadedDataImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -571,11 +566,11 @@ class _$LoadedData with DiagnosticableTreeMixin implements LoadedData {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(List<MovieListItem> items)? initial,
-    TResult Function(List<MovieListItem> items)? loading,
-    TResult Function(List<MovieListItem> items, int pageNumber)? loadedData,
-    TResult Function(List<MovieListItem> items, String errorMessage)? error,
-    TResult Function(List<MovieListItem> items)? allDataLoaded,
+    TResult? Function(List<MovieListItem> items)? initial,
+    TResult? Function(List<MovieListItem> items)? loading,
+    TResult? Function(List<MovieListItem> items, int pageNumber)? loadedData,
+    TResult? Function(List<MovieListItem> items, String errorMessage)? error,
+    TResult? Function(List<MovieListItem> items)? allDataLoaded,
   }) {
     return loadedData?.call(items, pageNumber);
   }
@@ -611,11 +606,11 @@ class _$LoadedData with DiagnosticableTreeMixin implements LoadedData {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Loading value)? loading,
-    TResult Function(LoadedData value)? loadedData,
-    TResult Function(Error value)? error,
-    TResult Function(AllDataLoaded value)? allDataLoaded,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(LoadedData value)? loadedData,
+    TResult? Function(Error value)? error,
+    TResult? Function(AllDataLoaded value)? allDataLoaded,
   }) {
     return loadedData?.call(this);
   }
@@ -639,46 +634,48 @@ class _$LoadedData with DiagnosticableTreeMixin implements LoadedData {
 
 abstract class LoadedData implements ListState {
   const factory LoadedData(
-      {required List<MovieListItem> items,
-      required int pageNumber}) = _$LoadedData;
+      {required final List<MovieListItem> items,
+      required final int pageNumber}) = _$LoadedDataImpl;
 
   @override
   List<MovieListItem> get items;
   int get pageNumber;
   @override
   @JsonKey(ignore: true)
-  $LoadedDataCopyWith<LoadedData> get copyWith =>
+  _$$LoadedDataImplCopyWith<_$LoadedDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ErrorCopyWith<$Res> implements $ListStateCopyWith<$Res> {
-  factory $ErrorCopyWith(Error value, $Res Function(Error) then) =
-      _$ErrorCopyWithImpl<$Res>;
+abstract class _$$ErrorImplCopyWith<$Res> implements $ListStateCopyWith<$Res> {
+  factory _$$ErrorImplCopyWith(
+          _$ErrorImpl value, $Res Function(_$ErrorImpl) then) =
+      __$$ErrorImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({List<MovieListItem> items, String errorMessage});
 }
 
 /// @nodoc
-class _$ErrorCopyWithImpl<$Res> extends _$ListStateCopyWithImpl<$Res>
-    implements $ErrorCopyWith<$Res> {
-  _$ErrorCopyWithImpl(Error _value, $Res Function(Error) _then)
-      : super(_value, (v) => _then(v as Error));
+class __$$ErrorImplCopyWithImpl<$Res>
+    extends _$ListStateCopyWithImpl<$Res, _$ErrorImpl>
+    implements _$$ErrorImplCopyWith<$Res> {
+  __$$ErrorImplCopyWithImpl(
+      _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
+      : super(_value, _then);
 
-  @override
-  Error get _value => super._value as Error;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? items = freezed,
-    Object? errorMessage = freezed,
+    Object? items = null,
+    Object? errorMessage = null,
   }) {
-    return _then(Error(
-      items: items == freezed
-          ? _value.items
+    return _then(_$ErrorImpl(
+      items: null == items
+          ? _value._items
           : items // ignore: cast_nullable_to_non_nullable
               as List<MovieListItem>,
-      errorMessage: errorMessage == freezed
+      errorMessage: null == errorMessage
           ? _value.errorMessage
           : errorMessage // ignore: cast_nullable_to_non_nullable
               as String,
@@ -688,11 +685,19 @@ class _$ErrorCopyWithImpl<$Res> extends _$ListStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Error with DiagnosticableTreeMixin implements Error {
-  const _$Error({required this.items, required this.errorMessage});
+class _$ErrorImpl with DiagnosticableTreeMixin implements Error {
+  const _$ErrorImpl(
+      {required final List<MovieListItem> items, required this.errorMessage})
+      : _items = items;
 
+  final List<MovieListItem> _items;
   @override
-  final List<MovieListItem> items;
+  List<MovieListItem> get items {
+    if (_items is EqualUnmodifiableListView) return _items;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_items);
+  }
+
   @override
   final String errorMessage;
 
@@ -711,23 +716,24 @@ class _$Error with DiagnosticableTreeMixin implements Error {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is Error &&
-            const DeepCollectionEquality().equals(other.items, items) &&
+            other is _$ErrorImpl &&
+            const DeepCollectionEquality().equals(other._items, _items) &&
             (identical(other.errorMessage, errorMessage) ||
                 other.errorMessage == errorMessage));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(items), errorMessage);
+      runtimeType, const DeepCollectionEquality().hash(_items), errorMessage);
 
   @JsonKey(ignore: true)
   @override
-  $ErrorCopyWith<Error> get copyWith =>
-      _$ErrorCopyWithImpl<Error>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
+      __$$ErrorImplCopyWithImpl<_$ErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -746,11 +752,11 @@ class _$Error with DiagnosticableTreeMixin implements Error {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(List<MovieListItem> items)? initial,
-    TResult Function(List<MovieListItem> items)? loading,
-    TResult Function(List<MovieListItem> items, int pageNumber)? loadedData,
-    TResult Function(List<MovieListItem> items, String errorMessage)? error,
-    TResult Function(List<MovieListItem> items)? allDataLoaded,
+    TResult? Function(List<MovieListItem> items)? initial,
+    TResult? Function(List<MovieListItem> items)? loading,
+    TResult? Function(List<MovieListItem> items, int pageNumber)? loadedData,
+    TResult? Function(List<MovieListItem> items, String errorMessage)? error,
+    TResult? Function(List<MovieListItem> items)? allDataLoaded,
   }) {
     return error?.call(items, errorMessage);
   }
@@ -786,11 +792,11 @@ class _$Error with DiagnosticableTreeMixin implements Error {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Loading value)? loading,
-    TResult Function(LoadedData value)? loadedData,
-    TResult Function(Error value)? error,
-    TResult Function(AllDataLoaded value)? allDataLoaded,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(LoadedData value)? loadedData,
+    TResult? Function(Error value)? error,
+    TResult? Function(AllDataLoaded value)? allDataLoaded,
   }) {
     return error?.call(this);
   }
@@ -814,44 +820,45 @@ class _$Error with DiagnosticableTreeMixin implements Error {
 
 abstract class Error implements ListState {
   const factory Error(
-      {required List<MovieListItem> items,
-      required String errorMessage}) = _$Error;
+      {required final List<MovieListItem> items,
+      required final String errorMessage}) = _$ErrorImpl;
 
   @override
   List<MovieListItem> get items;
   String get errorMessage;
   @override
   @JsonKey(ignore: true)
-  $ErrorCopyWith<Error> get copyWith => throw _privateConstructorUsedError;
+  _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $AllDataLoadedCopyWith<$Res>
+abstract class _$$AllDataLoadedImplCopyWith<$Res>
     implements $ListStateCopyWith<$Res> {
-  factory $AllDataLoadedCopyWith(
-          AllDataLoaded value, $Res Function(AllDataLoaded) then) =
-      _$AllDataLoadedCopyWithImpl<$Res>;
+  factory _$$AllDataLoadedImplCopyWith(
+          _$AllDataLoadedImpl value, $Res Function(_$AllDataLoadedImpl) then) =
+      __$$AllDataLoadedImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({List<MovieListItem> items});
 }
 
 /// @nodoc
-class _$AllDataLoadedCopyWithImpl<$Res> extends _$ListStateCopyWithImpl<$Res>
-    implements $AllDataLoadedCopyWith<$Res> {
-  _$AllDataLoadedCopyWithImpl(
-      AllDataLoaded _value, $Res Function(AllDataLoaded) _then)
-      : super(_value, (v) => _then(v as AllDataLoaded));
+class __$$AllDataLoadedImplCopyWithImpl<$Res>
+    extends _$ListStateCopyWithImpl<$Res, _$AllDataLoadedImpl>
+    implements _$$AllDataLoadedImplCopyWith<$Res> {
+  __$$AllDataLoadedImplCopyWithImpl(
+      _$AllDataLoadedImpl _value, $Res Function(_$AllDataLoadedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  AllDataLoaded get _value => super._value as AllDataLoaded;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? items = freezed,
+    Object? items = null,
   }) {
-    return _then(AllDataLoaded(
-      items: items == freezed
-          ? _value.items
+    return _then(_$AllDataLoadedImpl(
+      items: null == items
+          ? _value._items
           : items // ignore: cast_nullable_to_non_nullable
               as List<MovieListItem>,
     ));
@@ -860,11 +867,19 @@ class _$AllDataLoadedCopyWithImpl<$Res> extends _$ListStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$AllDataLoaded with DiagnosticableTreeMixin implements AllDataLoaded {
-  const _$AllDataLoaded({required this.items});
+class _$AllDataLoadedImpl
+    with DiagnosticableTreeMixin
+    implements AllDataLoaded {
+  const _$AllDataLoadedImpl({required final List<MovieListItem> items})
+      : _items = items;
 
+  final List<MovieListItem> _items;
   @override
-  final List<MovieListItem> items;
+  List<MovieListItem> get items {
+    if (_items is EqualUnmodifiableListView) return _items;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_items);
+  }
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -880,21 +895,22 @@ class _$AllDataLoaded with DiagnosticableTreeMixin implements AllDataLoaded {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is AllDataLoaded &&
-            const DeepCollectionEquality().equals(other.items, items));
+            other is _$AllDataLoadedImpl &&
+            const DeepCollectionEquality().equals(other._items, _items));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(items));
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_items));
 
   @JsonKey(ignore: true)
   @override
-  $AllDataLoadedCopyWith<AllDataLoaded> get copyWith =>
-      _$AllDataLoadedCopyWithImpl<AllDataLoaded>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AllDataLoadedImplCopyWith<_$AllDataLoadedImpl> get copyWith =>
+      __$$AllDataLoadedImplCopyWithImpl<_$AllDataLoadedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -913,11 +929,11 @@ class _$AllDataLoaded with DiagnosticableTreeMixin implements AllDataLoaded {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(List<MovieListItem> items)? initial,
-    TResult Function(List<MovieListItem> items)? loading,
-    TResult Function(List<MovieListItem> items, int pageNumber)? loadedData,
-    TResult Function(List<MovieListItem> items, String errorMessage)? error,
-    TResult Function(List<MovieListItem> items)? allDataLoaded,
+    TResult? Function(List<MovieListItem> items)? initial,
+    TResult? Function(List<MovieListItem> items)? loading,
+    TResult? Function(List<MovieListItem> items, int pageNumber)? loadedData,
+    TResult? Function(List<MovieListItem> items, String errorMessage)? error,
+    TResult? Function(List<MovieListItem> items)? allDataLoaded,
   }) {
     return allDataLoaded?.call(items);
   }
@@ -953,11 +969,11 @@ class _$AllDataLoaded with DiagnosticableTreeMixin implements AllDataLoaded {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Loading value)? loading,
-    TResult Function(LoadedData value)? loadedData,
-    TResult Function(Error value)? error,
-    TResult Function(AllDataLoaded value)? allDataLoaded,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(LoadedData value)? loadedData,
+    TResult? Function(Error value)? error,
+    TResult? Function(AllDataLoaded value)? allDataLoaded,
   }) {
     return allDataLoaded?.call(this);
   }
@@ -980,13 +996,13 @@ class _$AllDataLoaded with DiagnosticableTreeMixin implements AllDataLoaded {
 }
 
 abstract class AllDataLoaded implements ListState {
-  const factory AllDataLoaded({required List<MovieListItem> items}) =
-      _$AllDataLoaded;
+  const factory AllDataLoaded({required final List<MovieListItem> items}) =
+      _$AllDataLoadedImpl;
 
   @override
   List<MovieListItem> get items;
   @override
   @JsonKey(ignore: true)
-  $AllDataLoadedCopyWith<AllDataLoaded> get copyWith =>
+  _$$AllDataLoadedImplCopyWith<_$AllDataLoadedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
